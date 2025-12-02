@@ -5,11 +5,11 @@ Requirements
 [  ] Three Images
 
 Select TWO Additional Features to Add  
-[ no ] Feature 1 - Flexbox
-[ no ] Feature 2 - Flip Card
+[ yes] Feature 1 - Flexbox
+[ yes ] Feature 2 - Flip Card
 [ no ] Feature 3 - Animation
 [ no ] Feature 4 - Linear Gradient
-[ no ] Feature 5 - Use a .Gif
+[ yes] Feature 5 - Use a .Gif
 [ no ] Feature 6 - Unique Border Styles
 -->
 
@@ -21,12 +21,139 @@ Select TWO Additional Features to Add
   <title>Unit 5 Project</title>
   <meta charset="utf-8">
   <style>
+.main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body{
+  background-image: url(https://t3.ftcdn.net/jpg/05/28/75/96/360_F_528759662_xuWCSnUJTRrkj5PakfEBHRRkQnhRO0k4.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;}
 
+#title{
+  color: rgb(255, 216, 200);
+  animation: customAni 5s ease 0s infinite normal none;
+  text-align: center;
+}
+@keyframes customAni {
+  0%, 50%, 100% {opacity:1;}
+  25%, 75%, { opacity:0.3;}
+}
+.Burrow {
+  width:600px;
+  margin:30px;
+  border:10px solid rgb(80, 43, 0);
+  padding:5px;
+
+}
+#hi {
+  background-color: rgb(80, 43, 0);
+  color:antiquewhite;
+  wdith: 70%;
+  height: 180px;
+  overflow-y: auto;
+}
+img {
+  border-radius: 30px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin: auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #412f27;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #fff8d7;
+  color: rgb(53, 28, 28);
+  transform: rotateY(180deg);
+}
+h2 {
+  color: rgb(250, 215, 222);
+}
+#inspo {
+  background-color: darkseagreen;
+  border-radius: 20px;
+  padding: 20px;
+  border: rgb(250, 215, 222);
+}
+#why {
+  color: rgb(112, 206, 206);
+}
+li {
+  color: rgb(112, 206, 206);
+ 
+}
   </style>
 </head>
 <body>
-
- 
-
+<h1 id="title"> Come Hang Out In My Burrow</h1>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://img.freepik.com/premium-vector/cute-white-sealed-envelope-with-letter-brown-background-concept-basic-convenient-envelopes_118813-22974.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>you're invited to my burrow!</h1> 
+      <p>Hi please come hang out in my burrow please I am very lonely and need friends. I invited all my friends and they declined. I am a lonely mouse in my lonely burrow house. Will you acompany me?</p>
+      
+    </div>
+  </div>
+</div>
+<div class="main">
+ <img src="https://thumbs.dreamstime.com/b/mouse-s-house-comfortably-furnished-burrow-soft-bed-mouse-pet-mouse-s-house-comfortably-furnished-burrow-soft-bed-307018798.jpg" class="Burrow">
+ </div>
+<div id="hi">
+ <p>hi please hang out with me my house is awesome and like i made it myself it took a long time and no one has hung out with me yet. I am located at the big tree near the big rock in the forest but not the like biggest tree it's like the second biggest tree but like you'll know it when you see it. Ngl I don't really know what it's like to have friends i'm kind of new to this so please come to my burrow 
+  <span id="why">
+  <br> Here is why you should come: </p>
+<ul> <li> I am lonely </li>
+<li> I need friends </li>
+<li> I have alot of cheese and crumbs of some stuff I found </li>
+<li> some have said i am very funny </li>
+<li> Please</li>
+</ul>
+</span>
+</div>
+<h2> Inspo Pics for the Night:</h2>
+<div id="inspo">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD6cqgy-VPSzTCCx_mZ7X0SPet3oYM2KuhvQ&s">
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1w0eUzGUhpYuVHDO-Fj2kMUgDZbTwYjTAxITI0994q6GG2Pg2Eb4Nhz6GddEIXmQ8l1I&usqp=CAU">
+<img src="https://i.pinimg.com/564x/90/3c/65/903c652f108d6e5d5a88f0c650928f93.jpg" width="300">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR69o8G9L90Of7RLbTZhToFhbaVtFLK9krDH4YhvmD8Lg&s" width="300">
+<img src="https://thumbs.dreamstime.com/b/cute-mouse-wrapped-cozy-knitted-blanket-holding-tiny-cup-piece-cheese-plate-nearby-creating-warm-whimsical-354024082.jpg" width="300">
+</div>
+<h2> Bye thanks for reading plz come!</h2>
+<img src="https://media.tenor.com/nD4rpRqLrIUAAAAM/hamster-hamsteronspoon.gif">
 </body>
 </html>
